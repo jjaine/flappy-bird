@@ -28,8 +28,8 @@ Step-by-step:
 12. Create `rb` Rigidbody2D variable and get the `RigidBody2D` component to that in Start
 13. Create a serialized float for `upForce`
 14. In Update, with `Input.GetMouseButton(0)` check if the player has pressed the mouse button and    
-    * set `rb.velocity` to zero to reset the velocity
-    * use `rb.AddForce` to add the force to the y coordinate
+   * set `rb.velocity` to zero to reset the velocity
+   * use `rb.AddForce` to add the force to the y coordinate
 15. Get back to Unity, set `upForce` in the Inspector to 300, test if flapping works
 16. Add Unity built-in `OnCollisionEnter2D` method to `Bird.cs` to check for collision with ground, and set `isDead` to true
 
@@ -133,11 +133,11 @@ Step-by-step:
 99. Save the new clip as Flap, hit Ctrl+V (Cmd+V on macOS) to paste
 100. Hit the record button and then drag the `bird_up` sprite from the Project view to the Bird game object's Sprite Renderer
 101. Open the Animator window, set up conditions for the animations:
-    * open the Parameters list on the list, create a Trigger parameter called Flap
-    * right-click on Idle, then Make Transition and drag it to Flap
-    * edit the transition by clicking on the arrow, remove Has Exit Time checkbox tick
-    * add the Flap trigger to the Conditions in the Inspector
-    * make a transition from Flap to Idle with Has Exit Time checked
+   * open the Parameters list on the list, create a Trigger parameter called Flap
+   * right-click on Idle, then Make Transition and drag it to Flap
+   * edit the transition by clicking on the arrow, remove Has Exit Time checkbox tick
+   * add the Flap trigger to the Conditions in the Inspector
+   * make a transition from Flap to Idle with Has Exit Time checked
 102. Set the triggers from code:
-    * create `anim` Animator variable and get the `Animator` component to that in Start
-    * use `anim.SetTrigger` to change to the Flap state of the animator when the mouse button is pressed
+   * create `anim` Animator variable and get the `Animator` component to that in Start
+   * use `anim.SetTrigger` to change to the Flap state of the animator when the mouse button is pressed
